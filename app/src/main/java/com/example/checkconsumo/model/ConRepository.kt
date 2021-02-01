@@ -1,8 +1,7 @@
 package com.example.checkconsumo.model
 
 import androidx.lifecycle.LiveData
-import com.example.checkconsumo.model.Consumption
-import com.example.checkconsumo.model.ConsumptionDao
+
 
 class ConRepository(private val consumptionDao: ConsumptionDao) {
     //Contiene todos los datos desde la BBDD

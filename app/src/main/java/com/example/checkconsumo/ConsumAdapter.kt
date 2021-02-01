@@ -1,6 +1,5 @@
-package com.example.checkconsumo.model
+package com.example.checkconsumo
 
-import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

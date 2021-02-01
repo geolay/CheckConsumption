@@ -7,9 +7,9 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "consumption_table")
 data class Consumption (@PrimaryKey(autoGenerate = true)
                        @NonNull
-                        var id: Int? = 0,
+                        var id: Int = 0,
                         val item: String,
-                        val itemPrice: Int?,
-                        val quantity: Int?,
-                        val total: Int?)
+                        val itemPrice: Int,
+                        val quantity: Int,
+                        val total: Int)
 

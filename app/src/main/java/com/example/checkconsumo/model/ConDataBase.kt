@@ -14,8 +14,7 @@ abstract class ConDataBase: RoomDatabase() {
         private var INSTANCE : ConDataBase? = null
 
         fun getDataBase(context: Context): ConDataBase {
-            val tempInstance =
-                INSTANCE
+            val tempInstance = INSTANCE
             if (tempInstance != null) {
                 return tempInstance
             }

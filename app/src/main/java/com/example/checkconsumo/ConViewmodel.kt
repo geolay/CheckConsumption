@@ -1,4 +1,4 @@
-package com.example.checkconsumo.model
+package com.example.checkconsumo
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -41,6 +41,14 @@ class ConViewmodel(application: Application): AndroidViewModel(application) {
 
     fun updateConsumption(consumption: Consumption) = viewModelScope.launch {
         repository.updateConsumption(consumption)
+    }
+
+    var cantidad = 0
+    private var liveDataTotal: MutableLiveData<Int> = MutableLiveData()
+    fun resultadoItem(cantidad: Int, precio: Int): LiveData<Int>{
+        var totalItem = cantidad*precio
+        liveDataTotal.value = totalItem
+        return liveDataTotal
     }
 
 }
